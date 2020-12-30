@@ -6,9 +6,9 @@ const database =require("./mongo")
 
 
 //models vdo 3
-require("./models/Post")
+var Post = require("./models/post")
 
-const post= mongoose.model("test");
+const post= mongoose.model("Post");
 
 app.get("/post" , async (req, res) =>{
         try {
