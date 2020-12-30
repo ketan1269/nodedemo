@@ -1,5 +1,7 @@
 const mongoose = require("mongoose");
-var db = mongoose.connect('mongodb://localhost/test');
+mongoose.Promise= global.Promise;
+
+ var db = mongoose.connect('mongodb://localhost/Test');
                     console.log(db,"db");
                 checkMongooseConnection(db)
 
